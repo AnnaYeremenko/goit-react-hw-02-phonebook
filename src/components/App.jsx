@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { nanoid } from 'nanoid';
-import { GlobalStyle } from './GlobalStyle';
 import {ContactForm} from './ContactForm/ContactForm';
 import {ContactList} from './ContactList/ContactList';
 import {Filter} from './Filter/Filter';
