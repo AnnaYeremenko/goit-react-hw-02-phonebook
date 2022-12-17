@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Form = styled.form`
 display: flex;
 flex-direction: column;
+padding: 5px;
 `;
 
 export const InputTitle = styled.label`

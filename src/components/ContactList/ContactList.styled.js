@@ -7,6 +7,7 @@ export const ListContact = styled.ul`
   margin-top: 20px;
   margin-left: 20px;
   max-width: 500px;
+  padding: 5px;
 `;
 export const ButtonDelete = styled.button`
   margin-top: 10px;
@@ -24,7 +25,7 @@ export const ButtonDelete = styled.button`
 `;
 export const ContactItem = styled.li`
   display: flex;
-  font-size: 24px;
+  font-size: 20px;
   align-items: center;
   gap: 20px;
   justify-content: space-around; 

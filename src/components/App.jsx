@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { nanoid } from 'nanoid';
+
 import {ContactForm} from './ContactForm/ContactForm';
 import {ContactList} from './ContactList/ContactList';
 import {Filter} from './Filter/Filter';
+import {Title, ContactsTitle} from './App.styled';
 
 export class App extends Component {
   state = {
@@ -49,19 +51,11 @@ export class App extends Component {
 
   render() {
     return (
-      <div
-        style={{
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          fontSize: 40,
-          color: '#010101',
-          flexDirection: 'column'
-        }}
-      >
+      <Title>
         <h1>Phonebook</h1>
         <ContactForm onSubmit={this.addContact} />
+
+      <ContactsTitle>
         <h2>Contacts</h2>
         <Filter value={this.state.filter} onChange={this.changeFilter} />
         {this.state.contacts.length > 0 && (
@@ -70,7 +64,8 @@ export class App extends Component {
             onDelete={this.deleteContact}
           />
         )}
-      </div>
+        </ContactsTitle>
+      </Title>
     );
   }
 
